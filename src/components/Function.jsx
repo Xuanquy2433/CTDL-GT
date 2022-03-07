@@ -18,8 +18,8 @@ function Function() {
   console.log(upperCase("abc"));
   //     5. Viết hàm kiểm tra chuỗi này có tồn tại trong chuỗi kia hay không.
   //     6. Sử dụng hàm 5 để kiểm tra S2 có tồn tại trong S1 không
-  const include = (st1, ...args) => {
-    return st1.includes(...args);
+  const include = (st1, args) => {
+    return st1.includes(args);
   };
   console.log(include("abc", "a"));
   //     7. sử dụng hàm [s.length] để xuất ra độ dài các chuỗi s1-s5 và độ sài của chuỗi S1S2S3S4S5
