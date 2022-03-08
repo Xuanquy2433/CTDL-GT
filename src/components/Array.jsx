@@ -14,6 +14,21 @@ function Array() {
   };
   console.log(getLessThan(100));
 
+  //   10. Viết hàm trả ra danh sách tất cả các số lẻ nhỏ hơn n
+  //     - getOddlessThan(n): number[]
+  // 11. Sử dụng hàm (9) xuất ra console danh sách toàn bộ số lẻ <1000
+
+  const getOddlessThan = (n) => {
+    let arr = [];
+    for (let i = 0; i < n; i++) {
+      if (i % 2 !== 0) {
+        arr.push(i);
+      }
+    }
+    return arr;
+  };
+  console.log(getOddlessThan(1000));
+
   return <div></div>;
 }
 
