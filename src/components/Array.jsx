@@ -29,6 +29,41 @@ function Array() {
   };
   console.log(getOddlessThan(1000));
 
+  //   Viết hàm trả ra danh sách in hoa tất cả các phần tử trong mảng. Đầu vào là một mang, đầu ra là mông mảng khác và tất cả các phần tử được in hoa
+  //   - toUpperCase(arr) : string[]
+  // 13. Sử dụng hàm (12) để in hoa mảng sở thích cá nhân
+  const toUpperCase = (arr) => {
+    let array = [];
+    // arr.forEach((element) => {
+    //   a.push(element.toUpperCase());
+    // });
+    // return a;
+    arr.map((item, index) => {
+      array.push(item.toUpperCase());
+    });
+    return array;
+  };
+
+  let array = ["Listen to music", "Chill", "Playing games", "Watching TV"];
+  console.log(toUpperCase(array));
+
+  //   18. Viết hàm tìm ra vị trí tất cả phần tử nằm trong mảng
+  //     - find(arr, chuoiCanTim): numer[]
+  // 19. Sử dụng hàm (19).
+  //     - Mảng: ["bóng chuyền", "bóng rổ", "bóng đá", "bóng rổ"]
+  //     - string cần tìm: bóng rổ
+  //     - kết quả trả ra: vị trí [2,4]
+
+  const find = (arr, n) => {
+    arr.map((item, index) => {
+      if (item == n) {
+        console.log(index + 1);
+      }
+    });
+  };
+  let arrayFind = ["bóng chuyền", "bóng rổ", "bóng đá", "bóng rổ"];
+  find(arrayFind, "bóng rổ");
+
   return <div></div>;
 }
 
