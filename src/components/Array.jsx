@@ -5,6 +5,11 @@ function Array() {
   //     - getLessThan(n): number[]
   //     - Ví dụ getLessThan(3) sẽ trả ra mảng [0,1,2]
   //     9. Sử dụng hàm (8) xuất ra console danh sách các số nhỏ hơn 100
+  /**
+   * 
+   * @param {Number} n 
+   * @returns 
+   */
   const getLessThan = (n) => {
     let arr = [];
     for (let i = 0; i < n; i++) {
@@ -18,6 +23,11 @@ function Array() {
   //     - getOddlessThan(n): number[]
   // 11. Sử dụng hàm (9) xuất ra console danh sách toàn bộ số lẻ <1000
 
+  /**
+   * 
+   * @param {Number} n 
+   * @returns 
+   */
   const getOddlessThan = (n) => {
     let arr = [];
     for (let i = 0; i < n; i++) {
@@ -32,6 +42,11 @@ function Array() {
   //   Viết hàm trả ra danh sách in hoa tất cả các phần tử trong mảng. Đầu vào là một mang, đầu ra là mông mảng khác và tất cả các phần tử được in hoa
   //   - toUpperCase(arr) : string[]
   // 13. Sử dụng hàm (12) để in hoa mảng sở thích cá nhân
+  /**
+   * 
+   * @param {[]} arr 
+   * @returns 
+   */
   const toUpperCase = (arr) => {
     let array = [];
     // arr.forEach((element) => {
@@ -54,6 +69,11 @@ function Array() {
   //     - string cần tìm: bóng rổ
   //     - kết quả trả ra: vị trí [2,4]
 
+  /**
+   * 
+   * @param {[]} arr 
+   * @param {String} n 
+   */
   const find = (arr, n) => {
     arr.map((item, index) => {
       if (item == n) {

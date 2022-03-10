@@ -31,7 +31,7 @@ let iphoneX = {
 let iphone11 = {
   hinhAnh:
     "https://www.xtmobile.vn/vnt_upload/product/10_2020/thumbs/600_iphone_11_pro_max_den_xtmobile.jpg",
-  ten: "Iphone 11",
+  ten: "Iphone 5",
   gia: 11000000,
 };
 let iphone12 = {
