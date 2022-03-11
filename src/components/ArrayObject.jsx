@@ -55,6 +55,11 @@ function ArrayObject() {
   //   - Đầu vào là một mảng
   //   - Đầu ra là một mảng sau khi đã được sắp xếp
 
+  /**
+   * 
+   * @param {[]} arr 
+   * @returns 
+   */
   const sort = (arr) => {
     let array = [];
     array = arr.sort((a, b) => Number(a.gia) - Number(b.gia));
