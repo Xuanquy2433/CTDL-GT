@@ -40,11 +40,27 @@ function ArrayObject() {
   const searchName = (arr, name) => {
     arr.map((item, index) => {
       if (item.ten == name) {
-        console.log('vi tri: ',index);
+        console.log("vi tri: ", index);
       }
     });
   };
-  searchName(data, 'Iphone 5')
+  searchName(data, "Iphone 5");
+
+  //   14. Viết hàm sắp xếp một mảng các đối tượng theo giá tăng dần
+  //   - sapXepTangDanTheoGia(mang): []
+  //   - Đầu vào là một mảng
+  //   - Đầu ra là một mảng sau khi đã được sắp xếp
+  // 15. Viết hàm sắp xếp một mảng các đối tượng theo giá giảm dần
+  //   - sapXepGiamDanTheoGia(mang): []
+  //   - Đầu vào là một mảng
+  //   - Đầu ra là một mảng sau khi đã được sắp xếp
+
+  const sort = (arr) => {
+    let array = [];
+    array = arr.sort((a, b) => Number(a.gia) - Number(b.gia));
+    return array;
+  };
+  console.log(sort(data));
   return <div></div>;
 }
 

@@ -38,7 +38,7 @@ let iphone12 = {
   hinhAnh:
     "https://www.xtmobile.vn/vnt_upload/product/Hinh_DT/Iphone/thumbs/(600x600)_crop_iphone-12-pro-max-512gb-xtmobile.jpg",
   ten: "Iphone 12",
-  gia: 12000000,
+  gia: 1000000,
 };
 export const data = [
   iphone5,
