@@ -10,7 +10,7 @@ function DeQuy() {
   };
 
   countDown(10);
-
+ 
   const fib = (n) => {
     if (n === 1 || n === 2) {
       return 1;
@@ -20,7 +20,9 @@ function DeQuy() {
     }
   };
 
-  console.log("fib", fib(20));
+  console.log("fib", fib(10));
+
+  console.log('so fib thu 10 la: ',fib(10));
 
   const giaiThua = (number) => {
     if (number > 0) {
@@ -28,6 +30,9 @@ function DeQuy() {
     }
     return 1;
   };
+
+
+
 
   return <div></div>;
 }
