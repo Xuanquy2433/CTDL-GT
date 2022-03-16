@@ -66,6 +66,7 @@ function ArrayObject() {
     return array;
   };
   console.log(sort(data));
+  
   return <div></div>;
 }
 
