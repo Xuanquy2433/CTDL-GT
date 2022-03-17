@@ -3,6 +3,7 @@ import Array from "./components/Array";
 import ArrayObject from "./components/ArrayObject";
 import DeQuy from "./components/DeQuy";
 import Function from "./components/Function";
+import Search from "./components/Search";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Array/>
       <ArrayObject/>
       <DeQuy/>
+      <Search/>
     </div>
   );
 }
