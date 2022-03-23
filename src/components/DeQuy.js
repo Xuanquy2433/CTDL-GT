@@ -16,7 +16,6 @@ function DeQuy() {
       return 1;
     }
     if (n > 2) {
-     
       return fib(n - 1) + fib(n - 2);
       /**
       fib(4) + fib(3)
@@ -39,6 +38,18 @@ function DeQuy() {
     }
     return 1;
   };
+
+  /**
+     5 * giaiThua(4)
+     5 * ( 4 * giaiThua(3) )
+     5 * (4 * (3 * giaiThua(2)))
+     5 * (4 * (3 * (2 * giaiThua(1))))
+     5 * (4 * (3 * (2 * (1 * giaiThua(0)))))
+     5 * 4 * 3 * 2 * 1 * 1  
+   * 
+   * 
+   */
+  console.log("giai thua ", giaiThua(5));
 
   return <div></div>;
 }
