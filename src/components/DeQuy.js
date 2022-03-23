@@ -10,19 +10,28 @@ function DeQuy() {
   };
 
   countDown(10);
- 
+
   const fib = (n) => {
     if (n === 1 || n === 2) {
       return 1;
     }
     if (n > 2) {
+     
       return fib(n - 1) + fib(n - 2);
+      /**
+      fib(4) + fib(3)
+      fib(3) + fib(2) + fib (2) + fib(1);
+      fib(2) + fib(1) + fib(1) + fib(0) +  fib(1) + fib(0) + 1
+      1 + 1 + 1 + 0 + 1 + 0 + 1
+
+
+      **/
     }
   };
 
-  console.log("fib", fib(10));
+  console.log("fib", fib(5));
 
-  console.log('so fib thu 10 la: ',fib(10));
+  // console.log('so fib thu 10 la: ',fib(10));
 
   const giaiThua = (number) => {
     if (number > 0) {
@@ -30,12 +39,6 @@ function DeQuy() {
     }
     return 1;
   };
-
-
-  
-
-
-
 
   return <div></div>;
 }
