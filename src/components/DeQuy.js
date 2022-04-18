@@ -51,6 +51,34 @@ function DeQuy() {
    */
   console.log("giai thua ", giaiThua(5));
 
+  //so luong cac so nguyen duong
+
+  const countDigits = (n) => {
+    n = n < 0 ? -n : n;
+    if (n < 10) {
+      return 1;
+    } else {
+      return 1 + countDigits(n / 10);
+    }
+  };
+
+  //tinh tong  cac chu so co mot chu so
+  const sumAllDigit = (n) => {
+    n = n < 0 ? -n : n;
+
+    if (n < 10) {
+      return n;
+    } else {
+      return  n % 10 + sumAllDigit(n / 10);
+    }
+  };
+
+  console.log(countDigits(-999));
+  console.log(sumAllDigit(123));
+
+  
+
+
   return <div></div>;
 }
 
